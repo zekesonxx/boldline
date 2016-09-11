@@ -51,6 +51,7 @@ fn should_bold(c: char) -> bool {
 /// The markup to use
 ///
 /// You can use Marking::custom() to create a custom type if none of these strike your fancy.
+#[derive(Debug, PartialEq, Eq, Clone)]
 pub enum Marking {
     /// ANSI Terminal Escapes
     ANSIBold,
@@ -90,6 +91,7 @@ impl Marking {
 }
 
 /// The pattern to bold
+#[derive(Debug, PartialEq, Eq, Clone, Copy)]
 pub enum Pattern {
     // A line going left to right
     Left,
@@ -144,7 +146,7 @@ pub fn boldline(input: String, marking: Marking, pattern: Pattern) -> Vec<String
         }
 
         //prevent a double line in the middle
-        if next_to_eachother && was_next_to_last_iter {
+        if next_to_eachother && was_next_to_last_iter && pattern == Pattern::Cross {
             continue;
         } else if next_to_eachother {
             was_next_to_last_iter = true;
