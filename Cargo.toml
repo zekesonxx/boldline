@@ -5,6 +5,7 @@ version = "0.1.0"
 description = "Small utility to generate a bold line in a repeated line of text"
 license = "Apache-2.0"
 repository = "https://github.com/zekesonxx/boldline"
+exclude = ["README.md"]
 
 [[bin]]
 doc = false
