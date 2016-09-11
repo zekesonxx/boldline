@@ -1,7 +1,7 @@
 [package]
 authors = ["Zeke Sonxx <zeke@zekesonxx.com>"]
 name = "boldline"
-version = "0.1.0"
+version = "0.1.1"
 description = "Small utility to generate a bold line in a repeated line of text"
 license = "Apache-2.0"
 repository = "https://github.com/zekesonxx/boldline"
