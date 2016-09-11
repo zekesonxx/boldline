@@ -37,7 +37,7 @@
 
 #![allow(dead_code)]
 
-static DONT_BOLD: [char; 2] = [' ', '\''];
+static DONT_BOLD: [char; 3] = [' ', '\'', '.'];
 
 fn should_bold(c: char) -> bool {
     for check in DONT_BOLD.iter() {
