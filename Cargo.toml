@@ -1,0 +1,10 @@
+[package]
+authors = ["Zeke Sonxx <zeke@zekesonxx.com>"]
+name = "boldline"
+version = "0.1.0"
+
+[dependencies]
+
+[[bin]]
+name = "boldline"
+doc = false
