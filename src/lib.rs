@@ -37,7 +37,7 @@
 
 #![allow(dead_code)]
 
-static DONT_BOLD: [char; 3] = [' ', '\'', '.'];
+static DONT_BOLD: [char; 5] = [' ', '\'', '.', ':', '\t'];
 
 fn should_bold(c: char) -> bool {
     for check in DONT_BOLD.iter() {
@@ -55,7 +55,7 @@ fn should_bold(c: char) -> bool {
 pub enum Marking {
     /// ANSI Terminal Escapes
     ANSIBold,
-    /// Markdown `(**c**)`
+    /// Markdown `**c**`
     MarkdownBold,
     /// BBCode `[b]c[/b]`
     BBCodeBold,
